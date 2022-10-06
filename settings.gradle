@@ -13,4 +13,7 @@ include 'biz:bms-biz-service'
 findProject(':biz:bms-biz-service')?.name = 'bms-biz-service'
 include 'biz:bms-biz-api'
 findProject(':biz:bms-biz-api')?.name = 'bms-biz-api'
+include 'common'
+include 'common:bms-common-base'
+findProject(':common:bms-common-base')?.name = 'bms-common-base'
 

@@ -1,4 +1,5 @@
 
 dependencies {
     api(project(":biz:bms-biz-service"))
+    api("org.springframework.boot:spring-boot-starter-web")
 }

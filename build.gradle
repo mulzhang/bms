@@ -53,7 +53,7 @@ subprojects {
     //配置全局依赖版本信息
     ext {
         mysqlConnectorVersion = "8.0.13"
-        mybatisStarterVersion = "2.2.2"
+        mybatisPlusStarterVersion = "3.5.2"
         fastjsonVersion = "1.2.54"
         slf4jVersion = "1.7.16"
         commonsVersion = "3.0"
@@ -61,15 +61,12 @@ subprojects {
     }
     //配置子模块依赖
     dependencies {
-        api("org.springframework.boot:spring-boot-starter-web")
-        // Mybatis
-        api("org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatisStarterVersion")
+        // Mybatis-plus
+        api("com.baomidou:mybatis-plus-boot-starter:$mybatisPlusStarterVersion")
         // Log4j2
         api("org.springframework.boot:spring-boot-starter-log4j2")
         // JDBC Driver
         api("mysql:mysql-connector-java:$mysqlConnectorVersion")
-        // JSON
-        api("com.alibaba:fastjson:$fastjsonVersion")
         // Apache Commons
         api("org.apache.commons:commons-lang3:3.8.1")
 
